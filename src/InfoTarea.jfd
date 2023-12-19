@@ -1,0 +1,76 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:13:p, par l {seq {comp editarButton:::p::p, space :::x, comp button1:::p::p, space :15:15:p}, seq {par l {comp panel1:::p::p, seq l {space :p:8:p, comp nombreTarea:::p:214:p}}, space :0:1:x}}}}"
+			"$verticalGroup": "par l {seq t {comp nombreTarea:::p:55:p, space :p:24:p, comp panel1:::::x, space :p:12:p, par b {comp button1::b:p::p, comp editarButton::b:p::p}, space :p:18:p}}"
+		} ) {
+			name: "this"
+			"title": "Datos de Tarea"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Aceptar"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "aceptar", false ) )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, par t {seq l {comp label5:::p::p, space :p:12:p, comp terminada:::::x}, seq l {comp label3:::p::p, space :::p, comp fecha:::::x}, seq l {par t {comp label1::l:p::p, seq l {comp label4:::p::p, space u:::p, comp notificacion:::p:278:p}, comp scrollPane1::l:p:344:p}, space :0:0:x}, seq l {comp label2:::p::p, space :::p, comp tipo:::::x}}}}"
+				"$verticalGroup": "par l {seq {space :p:18:p, comp label1:::p::p, space u:::p, comp scrollPane1:::p:100:p, space ::24:x, par l:::p {comp tipo:::::x, comp label2:::::x}, space s:::p, par l {comp label3::t:p::p, comp fecha::t:p:17:p}, space s:::p, par l {comp label4::t:p::p, comp notificacion::t:p:15:p}, space s:::p, par l {comp label5::t:p::p, comp terminada::t:p:17:p}, space :p:41:p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Descripción:"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "descripcion"
+						"verticalAlignment": 1
+						"foreground": new java.awt.Color( 153, 153, 153, 255 )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Tipo:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "tipo"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Fecha:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "fecha"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Notificación:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "notificacion"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Terminada:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "terminada"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nombreTarea"
+				"font": new java.awt.Font( "Inter", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "editarButton"
+				"text": "Editar"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 145, 25 )
+			"size": new java.awt.Dimension( 390, 510 )
+		} )
+	}
+}

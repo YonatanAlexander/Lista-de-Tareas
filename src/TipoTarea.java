@@ -1,0 +1,3 @@
+public enum TipoTarea {
+    TRABAJO, ESTUDIOS, HOGAR, FAMILIA, AMIGOS, SOCIAL, OCIO, OTRO
+}

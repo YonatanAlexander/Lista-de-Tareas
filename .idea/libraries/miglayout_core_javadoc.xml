@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="miglayout-core-javadoc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/miglayout-core-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
