@@ -1,13 +1,10 @@
 import java.awt.*;
 import java.time.format.DateTimeFormatter;
-import java.util.Optional;
 import javax.swing.*;
-import net.miginfocom.swing.*;
+
 /*
  * Created by JFormDesigner on Sun Dec 17 22:01:08 CLST 2023
  */
-
-
 
 /**
  * @author yonatan
@@ -37,10 +34,6 @@ public class InfoTarea extends JDialog {
         InfoTarea infoTarea = new InfoTarea(nombreTarea);
         infoTarea.setMinimumSize(new Dimension());
         infoTarea.setVisible(true);
-    }
-
-    public static void main(String[] args) {
-        InfoTarea.display("Tender la cama");
     }
 
     private void aceptar() {
